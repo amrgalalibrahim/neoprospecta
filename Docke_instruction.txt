@@ -1,0 +1,12 @@
+#To use the Docker file 
+#using command line:
+docker run -it myimage
+
+#You can also mount the input and output directories from the host machine to the container so that the pipeline can read the input files and write the output files to the host machine instead of the container's filesystem.
+#Copy code
+docker run -it -v /path/to/input/dir:/app/input -v /path/to/output/dir:/app/output myimage
+#Make sure that the paths and file names in the Dockerfile and in the Python script match your setup with python3.8.
+
+#Also, this code assumes that you have a Docker installed on your system and the user running the script has permissions to use it.
+#If not, please setup using
+snap install docker

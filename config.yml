@@ -1,0 +1,6 @@
+#path/of/input_dir
+input_dir = '/home/amrgalal/Desktop/Teste_Amr/fqs'
+#path/of/output_dir
+output_dir = '/home/amrgalal/Desktop/Teste_Amr/output'
+#path/of/adaptor_file
+adapter_file = '/home/amrgalal/Trimmomatic/adapters/TruSeq2-PE.fa'

@@ -1,0 +1,23 @@
+#Create a new template in the otu_table_app/templates/otu_table.html file to display the OTU table data:
+{% extends 'base.html' %}
+
+{% block content %}
+<table>
+  <thead>
+    <tr>
+      <th>Taxonomy</th>
+      <th>Sample</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in data %}
+    <tr>
+      <td>{{ row.taxonomy }}</td>
+      <td>{{ row.sample }}</td>
+      <td>{{ row.count }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
