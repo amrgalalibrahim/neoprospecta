@@ -19,9 +19,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Set environment variables
-ENV TRIMMOMATIC_JAR_PATH '/home/amrgalal/Trimmomatic/trimmomatic-0.39.jar'
-ENV REFERENCE_BANK_PATH '/home/amrgalal/Desktop/Teste_Amr/database/fasta_file.fasta'
+ENV TRIMMOMATIC_JAR_PATH='/home/amrgalal/Trimmomatic/trimmomatic-0.39.jar'
+ENV REFERENCE_BANK_PATH='/home/amrgalal/Desktop/Teste_Amr/database/fasta_file.fasta'
 
 # Run the command to start the application
 CMD ["python", "main.py"]
-
